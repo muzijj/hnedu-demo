@@ -1,0 +1,108 @@
+.main{
+	padding: 4px 6px;
+	margin-top: 30px;
+}
+
+.fr{float: right;}
+.fl{float: left;}
+
+.ft-blue{
+	color: #0b61ac;
+}
+
+.layui-input{
+	width: 98%;
+}
+
+.code-img{
+	position: absolute;
+	right: 2%;
+	top: 0;
+	z-index: 99;
+	width: 100px;
+	height: 38px;
+    cursor: pointer;
+    border-left: 1px solid #e6e6e6;
+}
+
+.layui-form-label{
+	width: 60px;
+	padding: 9px 0px;
+	text-align: left;
+}
+
+.layui-input-block{
+	margin-left: 60px;
+}
+
+.layui-btn{
+	background-color: #0896f3;
+	width: 100%;
+}
+
+.layui-form-mid{
+	padding: 0 0!important;
+	white-space: nowrap;
+}
+
+.other-login-win{
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.other-way-title{
+	font-size: 16px;
+	margin: 10px 0;
+	text-align: center;
+}
+
+.other-way-item{
+	width:57px;
+	height:57px;
+	background:url(../images/login-other.png);
+	display:inline-block;
+	margin-right:10px;
+	margin-top:10px;
+	float:left;
+	position:relative;
+	text-decoration:none;
+	margin-left: 10px;
+	cursor: pointer;  
+    transition: all 0.6s;  
+}
+
+.other-way-item:hover{
+	transform:scale(1.1);
+}
+
+.other-way-item.duanxin{
+	background-position: 0 -170px;
+}
+
+.other-way-item.weixin{
+	background-position: -204px 0;
+}
+
+.other-way-item.zhifubao{
+	background-position: 0 -87px;
+}
+
+.other-way-item.qq{
+	background-position: -102px 0;
+}
+
+.other-way-item.dingding{
+	background-position: -102px -170px;
+}
+
+.logindiv{
+	margin-bottom: 0;
+}
+
+.hide{
+	display: none;
+}
+
+.user_info p{
+    padding: 10px;
+}

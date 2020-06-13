@@ -1,0 +1,134 @@
+.step-body{
+	position: relative;
+}
+.step-header{
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.step-content{
+	width: 98%;
+	margin: auto;
+	margin-top: 30px;
+	
+}
+.step-header ul{
+	padding: 0;
+}
+.step-header li{
+	list-style-type:none;
+	float: left;
+	position: relative; 
+}
+
+.step-header li:after{
+	content:"";
+	display: inline-block;
+	vertical-align:middle;
+	width:45%; 
+	border-bottom:2px solid #e4e8eb;
+}
+.step-header li p{
+	margin-top: 30px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #555555;
+}
+.step-header li .step-name{
+	position: relative;
+	left: 25px;
+	font-size: 16px;
+	top: 0;
+	line-height: 25px;
+	background-color: #fff;
+	padding: 0 10px; 
+}
+.step-header li a{
+	position: absolute;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #777;
+	height: 25px;
+	line-height: 25px;
+	background: url(./images/cell.png) center top no-repeat;
+	display: block;
+	background-color: #FFFFFF;
+	width: 35px;
+	left: 0;
+	top: 0;
+	text-decoration:none;
+	text-align: center;
+}
+.step-header li.step-active a{
+	background: url(./images/cell-active.png) center top  no-repeat ;
+	color: white;
+	background-color: #FFFFFF;
+}
+.step-header li.step-current a{
+	background: url(./images/cell-current.png) center top  no-repeat ;
+	color: #fff;
+	background-color: #FFFFFF;
+}
+.step-header li.step-active p{
+	color: #58B7FF;
+}
+.step-bar,.step-bar-active{
+	height: 13px;
+	border-radius: 12px;
+}
+.step-bar{
+	background: url(./images/bar-bg.png) ;
+	position: relative;
+	border-radius: 12px;
+	z-index: -1;
+	height: 1px;
+	top: 12.5px;
+}
+.step-bar-active{
+	width: 0;
+	background: url(./images/bar-bg-active.png) ;
+	height: 1px;
+
+}
+.step-list{
+	display: none;
+	clear: both;
+}
+
+.step-layout{
+	width: 80%; 
+	margin: auto;
+}
+
+.step-success{
+	width: 90%;
+	text-align: center;
+	line-height: 40px;
+	padding-top: 20px;
+}
+
+.step-success .ft{
+	font-size: 18px;
+}
+
+.step-success .ftnum{
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.step-success .other-way-item{
+	margin-top: 1px;
+	margin-right: 0;
+}
+
+@media only screen and (max-width:768px){
+	.step-header{
+		width: 100%;
+	}
+	.step-header li:after{
+		border-bottom-color: #fff;
+	}
+	.step-header li .step-name{
+		font-size: 12px;
+	}
+}

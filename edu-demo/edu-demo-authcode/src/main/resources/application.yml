@@ -1,0 +1,9 @@
+server:
+  port: 81
+
+spring:
+  thymeleaf:
+    cache: false
+
+edu:
+  sso-url: http://demo

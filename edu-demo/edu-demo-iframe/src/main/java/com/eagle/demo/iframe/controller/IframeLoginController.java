@@ -26,15 +26,17 @@ public class IframeLoginController {
     @GetMapping("/")
     public String login(Model model){
         // 所申请的应用id，此为示例应用，该应用回调地址为http://127.0.0.1:81/home，请确保该部署环境为127.0.0.1:81
-        String accountId = "/hneduSsoLogin?accountId=test";
-        model.addAttribute("eduSsoUrl", eduSsoUrl + accountId);
+        String module = "/hneduSsoLogin.jsp?clientId=test";
+        model.addAttribute("eduSsoUrl", eduSsoUrl + module);
         return "login";
     }
 
     @GetMapping("home")
     public String home(Model model, String tokenKey){
-        String accountId = "/logout?accountId=test";
-        model.addAttribute("eduSsoUrl", eduSsoUrl + accountId);
+        if(tokenKey == null || tokenKey.length() == 0){
+            return "redirect:/";
+        }
+        model.addAttribute("eduSsoUrl", eduSsoUrl);
         model.addAttribute("tokenKey", tokenKey);
         return "home";
     }

@@ -6,4 +6,4 @@ spring:
     cache: false
 
 edu:
-  sso-url: http://demo
+  sso-url: http://sso

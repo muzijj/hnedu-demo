@@ -31,7 +31,6 @@
 
     layui.use(['form'], function(){
         var layer = layui.layer;
-
         $.ajax({
             url: 'user',
             xhrFields: {
@@ -61,7 +60,7 @@
             layer.confirm('确认退出吗？',{
                 btn: ['确认', '取消']
             }, function(index){
-                window.location.replace("[[${eduSsoUrl}]]");
+                window.location.replace("[[${eduSsoUrl}]]/oauth/remove/token?redirect_uri=http://127.0.0.1:81/home&access_token=[[${tokenKey}]]");
             });
         });
     });

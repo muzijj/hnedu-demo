@@ -12,10 +12,12 @@ apache-maven-3.3.9
 
 #示例说明：
 
-edu-demo-authcode为授权模式入
+edu-demo-authcode为授权模式接入
+
 访问地址：http://127.0.0.1:81/
 
 edu-demo-iframe为iframe嵌入式接入
+
 访问地址：http://127.0.0.1:81/
 
 

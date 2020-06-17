@@ -8,7 +8,7 @@
         <version>2.1.14.RELEASE</version>
 	</parent>
 	<groupId>com.eagle</groupId>
-	<artifactId>hnedu-demo</artifactId>
+	<artifactId>edu-demo</artifactId>
 	<description>单点接入调用demo</description>
     <version>1.0.0</version>
     <packaging>pom</packaging>
